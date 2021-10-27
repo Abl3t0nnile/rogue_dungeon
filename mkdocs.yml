@@ -1,0 +1,32 @@
+site_name: Rogue Dungeon
+site_url: https://example.com/
+
+nav:
+  - Design Docs: design/design_doc.md
+  - Technical Docs: technical/README.md
+  - Tools:
+    - ASEPRITE: tools/aseprite/README.md
+    - GAME MAKER: tools/gms2/README.md
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+  icon:
+    logo: material/gamepad-square
+  font:
+    text: Montserrat
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: amber
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
