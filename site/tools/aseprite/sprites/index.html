@@ -362,8 +362,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#importieren-von-quelldateien-in-aseprite" class="md-nav__link">
-    Importieren von Quelldateien in ASEPRITE
+  <a href="#importieren-von-sprite-sheets" class="md-nav__link">
+    Importieren von Sprite Sheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbereiten-einzelner-charaktere-und-animationen" class="md-nav__link">
+    Aufbereiten einzelner Charaktere und Animationen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportieren-von-gifs" class="md-nav__link">
+    Exportieren von GIF's
   </a>
   
 </li>
@@ -433,8 +447,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#importieren-von-quelldateien-in-aseprite" class="md-nav__link">
-    Importieren von Quelldateien in ASEPRITE
+  <a href="#importieren-von-sprite-sheets" class="md-nav__link">
+    Importieren von Sprite Sheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aufbereiten-einzelner-charaktere-und-animationen" class="md-nav__link">
+    Aufbereiten einzelner Charaktere und Animationen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportieren-von-gifs" class="md-nav__link">
+    Exportieren von GIF's
   </a>
   
 </li>
@@ -459,9 +487,36 @@
 <p>Sprites jeder Art beginnen mit dem Präfix <code>spr_</code>. Animierte Sprites werden mit einem Suffix <code>_stripXX</code> versehen, wobei <code>XX</code> durch die Zahl der Animationsphasen ersetzt wird. Handelt es sich um eine Zahl zwischen 1 und 9 wird diese als <code>0X</code> angegeben. Dieses Suffix erleichtert den Import der Animationen in <em>GMS2</em>.</p>
 <p>Beispiel: <code>spr_goblin_strip04</code> für einen animierten Sprite mit 4 Animationsphasen.</p>
 </div>
-<h2 id="importieren-von-quelldateien-in-aseprite">Importieren von Quelldateien in ASEPRITE</h2>
-<p>Quelldateien, welche als externe Ressourcen für das Projekt gekauft oder aus anderen Quellen herunter geladen wurden, liegen zumeist als eine Matrix aus verschiedenen Sprites in den Zeilen mit den jeweiligen Animationsphasen in den Spalten vor.</p>
-<p><img alt="Example Sprite Sheet" src="../../../images/StrongholdSpriteSheet.png" /></p>
+<p>Quelldateien, welche als externe Ressourcen für das Projekt gekauft oder aus anderen Quellen herunter geladen wurden, liegen zumeist als eine Matrix aus verschiedenen Sprites in den Zeilen mit den jeweiligen Animationsphasen in den Spalten vor. Jedes Einzelbild hat dabei</p>
+<p><img alt="Example Sprite Sheet" src="../../../images/StrongholdSpriteSheet.png" width="800" />
+<strong>Beispiel Sprite Sheet von itch.io</strong></p>
+<p>Das oben gezeigte Beispiel enthält 14 verschiedene Sprites, welche jeweils eine 4 Phasen Animation für die Aktionen <em>Idle</em>, <em>Walk</em>, <em>Attack</em>, <em>Hit</em> und <em>Death</em> haben.
+Diese Matrix muss im Laufe des Workflows in Einzelanimationen unterteilt werden, welche nach den Namenskonventionen im entsprechenden Unterordner abgespeichert werden müssen.</p>
+<p><img alt="Example animated Sprite" src="../../../images/spr_goblin_strip04.png" width="800" />
+<strong>Einzelanimation in 4 Phasen</strong></p>
+<h2 id="importieren-von-sprite-sheets">Importieren von Sprite Sheets</h2>
+<p><em>ASEPRITE</em> bietet einen einfachen Workflow um Quelldateien im oben beschriebenen Format zu importieren und zur weiteren Verarbeitung aufzubereiten.</p>
+<ol>
+<li>Öffnen der Quelldatei mit <code>File &gt; Import Sprite Sheet</code> oder <code>CMD + I</code></li>
+<li>Auswahl der Quelldatei mit <code>Select File</code></li>
+<li>Auswahl des zu importierenden Abschnitts mit <code>Type</code>.<ul>
+<li>Horizontal / Vertical Strip -&gt; Eignet sich am besten, um bestimmte Teile des Sheets zu lesen</li>
+<li>By Rows / Columns importiert das gesamte Sheet und sortiert die erzeugten Kacheln nach Zeilen oder Spalten</li>
+</ul>
+</li>
+<li>Eingabe <code>X</code> und <code>Y</code> für die Koordinaten des ersten Pixels, der zu importieren ist. Eignet sich um Ränder abzuschneiden</li>
+<li>Eingabe <code>Width</code> / <code>Height</code> für die entsprechenden Maße einer einzelnen Kachel</li>
+<li>Checkbox Padding mit <code>X</code> und <code>Y</code>, falls leere Pixel zwischen den einzelnen Kacheln sein sollten</li>
+<li>Bestätigen mit <code>Import</code></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hinweis</p>
+<p>Die aktuelle Auswahl des zu importierenden Bereichs innerhalb eines Sprite Sheets wird durch den ausgegrauten bzw. hervorgehobenen Bereich, sowie die Hilfslinien dargestellt.</p>
+</div>
+<h2 id="aufbereiten-einzelner-charaktere-und-animationen">Aufbereiten einzelner Charaktere und Animationen</h2>
+<p>Hier geht's weiter ...</p>
+<h2 id="exportieren-von-gifs">Exportieren von GIF's</h2>
+<p>Hier auch ..</p>
                 
               
               
