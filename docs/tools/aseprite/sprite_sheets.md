@@ -1,3 +1,0 @@
-# Sprite Sheets
-
-Sprite Sheets sind ...
