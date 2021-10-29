@@ -5,23 +5,17 @@ markdown_extensions:
   - meta
   - admonition
   - attr_list
-  - md_in_html
+  - pymdownx.keys
 
-nav:
-  - Design Docs: design/design_doc.md
-  - Technical Docs: technical/README.md
-  - Tools:
-    - ASEPRITE:
-      - tools/aseprite/README.md
-      - Sprites: tools/aseprite/sprites.md
-      - Tile Maps: tools/aseprite/tile_maps.md
-    - GAME MAKER: tools/gms2/README.md
+
 
 theme:
   name: material
   features:
     - navigation.indexes
     - navigation.sections
+    - navigation.tabs
+    - navigation.top
   icon:
     logo: material/gamepad-square
   font:

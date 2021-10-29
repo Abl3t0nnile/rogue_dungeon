@@ -22,7 +22,7 @@ Diese Matrix muss im Laufe des Workflows in Einzelanimationen unterteilt werden,
 
 *ASEPRITE* bietet einen einfachen Workflow um Quelldateien im oben beschriebenen Format zu importieren und zur weiteren Verarbeitung aufzubereiten.
 
-1. Öffnen der Quelldatei mit `File > Import Sprite Sheet` oder `CMD + I`
+1. Öffnen der Quelldatei mit `File > Import Sprite Sheet` oder ++cmd+i++
 2. Auswahl der Quelldatei mit `Select File`
 3. Auswahl des zu importierenden Abschnitts mit `Type`.
     - Horizontal / Vertical Strip -> Eignet sich am besten, um bestimmte Teile des Sheets zu lesen
