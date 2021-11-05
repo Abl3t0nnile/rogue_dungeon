@@ -1,38 +1,141 @@
-site_name: Rogue Dungeon
-site_url: https://example.com/
+# Config File der MkDocs Seite für dieses Projekt
 
+# Project information
+site_name: Project Rogue Dungeon
+site_url: https://abl3t0nnile.github.io/rogue_dungeon/
+site_author: Gregor Minnemann
+site_description: >-
+  Dokumentationstool und Notepad für das Game Projekt Rogue Dungeon.
+# Repository
+repo_name: Abl3t0nnile/rogue_dungeon
+repo_url: https://github.com/Abl3t0nnile/rogue_dungeon.git
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2021 Gregor Minnemann
+
+# Configuration
+theme:
+  name: material
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: de
+  features:
+    - content.code.annotate
+    # - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+      scheme: default
+      primary: amber
+      accent: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+      scheme: slate
+      primary: red
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Montsserat
+    code: Roboto Mono
+  favicon: fontawesome/solid/dungeon
+  icon:
+    logo: fontawesome/solid/dungeon
+
+# Plugins
+plugins:
+  - search
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Abl3t0nnile
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com
+
+# Extensions
 markdown_extensions:
-  - meta
+
+  # Python Markdown
+  - abbr
   - admonition
   - attr_list
   - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.tasklist
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
+# Page tree
+nav:
+  - Notepad:
+    - notepad/index.md
+  - Game Design:
+    - design/index.md
+  - Technical Docs:
+    - code/index.md
+  - Tools:
+    - tools/index.md
+    - Godot - Game Engine:
+      - tools/godot/index.md
+      - Grundlagen: tools/godot/basics.md
+    - Aseprite - Sprite Editor:
+      - tools/aseprite/index.md
+      - Umgang mit Sprites: tools/aseprite/sprites.md
+      - Tilemaps: tools/aseprite/tilemaps.md
+  - Links: links.md
+  - About: about.md
 
-
-theme:
-  name: material
-  features:
-    - navigation.indexes
-    - navigation.sections
-    - navigation.tabs
-    - navigation.top
-  icon:
-    logo: material/gamepad-square
-  font:
-    text: Montserrat
-    code: Roboto Mono
-  palette:
-    - scheme: default
-      primary: amber
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - scheme: slate
-      primary: deep orange
-      accent: teal
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode

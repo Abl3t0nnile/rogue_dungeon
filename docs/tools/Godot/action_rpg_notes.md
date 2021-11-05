@@ -8,6 +8,17 @@ Dieser Artikel dient zur begleitenden Dokumentation der Videoserie [Godot Action
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mAbG8Oi-SvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Importieren von Texturen mit Presets
+
+Dateien lassen sich einfach importieren, indem man Ordner oder Dateien aus dem Finder in das File System zieht. Allerdings wendet *Godot* beim Import von Bildern einen Default Filter auf die importierten Dateien an. Der Filter kann für jede Datei mit Hilfe des `Reimport` Buttons aktualisiert werden.
+
+!!! Hint "Filter Default für Import"
+    Sollen alle Bilder nach dem gleichen Standard importiert werden, kann dieser über das Drop Down Menü `Preset >> Set as default for 'Texture'` überschrieben werden.
+
+### Window Setup
+
+Für ein 2D Pixel Art Projekt mit niedriger Auflösung müssen einige Einstellungen in den Projekt Einstellungen geändert werden. Im Bereich *Window* kann die native Auflösung des Projekts mit `Size >> Width / Height` eingestellt werden. Damit das Fenster nicht zu klein wird, kann `Test Width / Test Height` auf ein Vielfaches der nativen Auflösung eingestellt werden. Damit Die native Auflösung auf die dargestellte Auflösung skaliert werden, muss die Option `Stretch >> Mode >> 2d` ausgewählt werden.
+
 ## Part 2 - Delta and smooth Movement
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EQA9MJ5_TxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
