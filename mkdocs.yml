@@ -123,6 +123,7 @@ markdown_extensions:
 nav:
   - Notepad:
     - notepad/index.md
+    - Dynamische Bewegung in 2D: notepad/dynamic_movement_2d.md
   - Game Design:
     - design/index.md
   - Technical Docs:
