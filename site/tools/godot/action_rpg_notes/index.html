@@ -13,19 +13,21 @@
         <meta name="author" content="Gregor Minnemann">
       
       
-      <link rel="icon" href="/rogue_dungeon/fontawesome/solid/dungeon">
+        <link rel="canonical" href="https://abl3t0nnile.github.io/rogue_dungeon/tools/godot/action_rpg_notes/">
+      
+      <link rel="icon" href="../../../fontawesome/solid/dungeon">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Project Rogue Dungeon</title>
+        <title>Tutorial Notes - Action RPG - Project Rogue Dungeon</title>
       
     
     
-      <link rel="stylesheet" href="/rogue_dungeon/assets/stylesheets/main.db9e7362.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.db9e7362.min.css">
       
         
-        <link rel="stylesheet" href="/rogue_dungeon/assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -67,7 +69,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="teal">
   
     
-    <script>function __prefix(e){return new URL("/rogue_dungeon/",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -75,6 +77,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#part-1-introduction" class="md-skip">
+          Zum Inhalt
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -85,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/rogue_dungeon/." title="Project Rogue Dungeon" class="md-header__button md-logo" aria-label="Project Rogue Dungeon" data-md-component="logo">
+    <a href="../../.." title="Project Rogue Dungeon" class="md-header__button md-logo" aria-label="Project Rogue Dungeon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m128.73 195.32-82.81-51.76c-8.04-5.02-18.99-2.17-22.93 6.45A254.19 254.19 0 0 0 .54 239.28C-.05 248.37 7.59 256 16.69 256h97.13c7.96 0 14.08-6.25 15.01-14.16 1.09-9.33 3.24-18.33 6.24-26.94 2.56-7.34.25-15.46-6.34-19.58zM319.03 8C298.86 2.82 277.77 0 256 0s-42.86 2.82-63.03 8c-9.17 2.35-13.91 12.6-10.39 21.39l37.47 104.03A16.003 16.003 0 0 0 235.1 144h41.8c6.75 0 12.77-4.23 15.05-10.58l37.47-104.03c3.52-8.79-1.22-19.03-10.39-21.39zM112 288H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm0 128H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm77.31-283.67-36.32-90.8c-3.53-8.83-14.13-12.99-22.42-8.31a257.308 257.308 0 0 0-71.61 59.89c-6.06 7.32-3.85 18.48 4.22 23.52l82.93 51.83c6.51 4.07 14.66 2.62 20.11-2.79 5.18-5.15 10.79-9.85 16.79-14.05 6.28-4.41 9.15-12.17 6.3-19.29zM398.18 256h97.13c9.1 0 16.74-7.63 16.15-16.72a254.135 254.135 0 0 0-22.45-89.27c-3.94-8.62-14.89-11.47-22.93-6.45l-82.81 51.76c-6.59 4.12-8.9 12.24-6.34 19.58 3.01 8.61 5.15 17.62 6.24 26.94.93 7.91 7.05 14.16 15.01 14.16zm54.85-162.89a257.308 257.308 0 0 0-71.61-59.89c-8.28-4.68-18.88-.52-22.42 8.31l-36.32 90.8c-2.85 7.12.02 14.88 6.3 19.28 6 4.2 11.61 8.9 16.79 14.05 5.44 5.41 13.6 6.86 20.11 2.79l82.93-51.83c8.07-5.03 10.29-16.19 4.22-23.51zM496 288h-96c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm0 128h-96c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zM240 177.62V472c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8V177.62c-5.23-.89-10.52-1.62-16-1.62s-10.77.73-16 1.62zm-64 41.51V472c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8V189.36c-12.78 7.45-23.84 17.47-32 29.77zm128-29.77V472c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8V219.13c-8.16-12.3-19.22-22.32-32-29.77z"/></svg>
@@ -104,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Tutorial Notes - Action RPG
             
           </span>
         </div>
@@ -212,7 +219,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/rogue_dungeon/notepad/" class="md-tabs__link">
+      <a href="../../../notepad/" class="md-tabs__link">
         Notepad
       </a>
     </li>
@@ -228,7 +235,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/rogue_dungeon/design/" class="md-tabs__link">
+      <a href="../../../design/" class="md-tabs__link">
         Game Design
       </a>
     </li>
@@ -244,7 +251,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/rogue_dungeon/technical/" class="md-tabs__link">
+      <a href="../../../technical/" class="md-tabs__link">
         Technical Docs
       </a>
     </li>
@@ -260,7 +267,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/rogue_dungeon/tools/" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link">
         Tools
       </a>
     </li>
@@ -273,7 +280,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/rogue_dungeon/links/" class="md-tabs__link">
+    <a href="../../../links/" class="md-tabs__link">
       Links
     </a>
   </li>
@@ -285,7 +292,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/rogue_dungeon/about/" class="md-tabs__link">
+    <a href="../../../about/" class="md-tabs__link">
       About
     </a>
   </li>
@@ -312,7 +319,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/rogue_dungeon/." title="Project Rogue Dungeon" class="md-nav__button md-logo" aria-label="Project Rogue Dungeon" data-md-component="logo">
+    <a href="../../.." title="Project Rogue Dungeon" class="md-nav__button md-logo" aria-label="Project Rogue Dungeon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m128.73 195.32-82.81-51.76c-8.04-5.02-18.99-2.17-22.93 6.45A254.19 254.19 0 0 0 .54 239.28C-.05 248.37 7.59 256 16.69 256h97.13c7.96 0 14.08-6.25 15.01-14.16 1.09-9.33 3.24-18.33 6.24-26.94 2.56-7.34.25-15.46-6.34-19.58zM319.03 8C298.86 2.82 277.77 0 256 0s-42.86 2.82-63.03 8c-9.17 2.35-13.91 12.6-10.39 21.39l37.47 104.03A16.003 16.003 0 0 0 235.1 144h41.8c6.75 0 12.77-4.23 15.05-10.58l37.47-104.03c3.52-8.79-1.22-19.03-10.39-21.39zM112 288H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm0 128H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm77.31-283.67-36.32-90.8c-3.53-8.83-14.13-12.99-22.42-8.31a257.308 257.308 0 0 0-71.61 59.89c-6.06 7.32-3.85 18.48 4.22 23.52l82.93 51.83c6.51 4.07 14.66 2.62 20.11-2.79 5.18-5.15 10.79-9.85 16.79-14.05 6.28-4.41 9.15-12.17 6.3-19.29zM398.18 256h97.13c9.1 0 16.74-7.63 16.15-16.72a254.135 254.135 0 0 0-22.45-89.27c-3.94-8.62-14.89-11.47-22.93-6.45l-82.81 51.76c-6.59 4.12-8.9 12.24-6.34 19.58 3.01 8.61 5.15 17.62 6.24 26.94.93 7.91 7.05 14.16 15.01 14.16zm54.85-162.89a257.308 257.308 0 0 0-71.61-59.89c-8.28-4.68-18.88-.52-22.42 8.31l-36.32 90.8c-2.85 7.12.02 14.88 6.3 19.28 6 4.2 11.61 8.9 16.79 14.05 5.44 5.41 13.6 6.86 20.11 2.79l82.93-51.83c8.07-5.03 10.29-16.19 4.22-23.51zM496 288h-96c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm0 128h-96c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h96c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zM240 177.62V472c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8V177.62c-5.23-.89-10.52-1.62-16-1.62s-10.77.73-16 1.62zm-64 41.51V472c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8V189.36c-12.78 7.45-23.84 17.47-32 29.77zm128-29.77V472c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8V219.13c-8.16-12.3-19.22-22.32-32-29.77z"/></svg>
@@ -361,7 +368,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/rogue_dungeon/notepad/">Notepad</a>
+          <a href="../../../notepad/">Notepad</a>
           
         </div>
       
@@ -406,7 +413,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/rogue_dungeon/design/">Game Design</a>
+          <a href="../../../design/">Game Design</a>
           
         </div>
       
@@ -451,7 +458,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/rogue_dungeon/technical/">Technical Docs</a>
+          <a href="../../../technical/">Technical Docs</a>
           
         </div>
       
@@ -500,7 +507,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/rogue_dungeon/tools/">Tools</a>
+          <a href="../../">Tools</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -545,7 +552,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/rogue_dungeon/tools/godot/">Godot - Game Engine</a>
+          <a href="../">Godot - Game Engine</a>
           
             <label for="__nav_4_2">
               <span class="md-nav__icon md-icon"></span>
@@ -569,7 +576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rogue_dungeon/tools/godot/basics/" class="md-nav__link">
+      <a href="../basics/" class="md-nav__link">
         Grundlagen
       </a>
     </li>
@@ -613,7 +620,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/rogue_dungeon/tools/aseprite/">Aseprite - Sprite Editor</a>
+          <a href="../../aseprite/">Aseprite - Sprite Editor</a>
           
             <label for="__nav_4_3">
               <span class="md-nav__icon md-icon"></span>
@@ -637,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rogue_dungeon/tools/aseprite/sprites/" class="md-nav__link">
+      <a href="../../aseprite/sprites/" class="md-nav__link">
         Umgang mit Sprites
       </a>
     </li>
@@ -651,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rogue_dungeon/tools/aseprite/tilemaps/" class="md-nav__link">
+      <a href="../../aseprite/tilemaps/" class="md-nav__link">
         Tilemaps
       </a>
     </li>
@@ -680,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rogue_dungeon/links/" class="md-nav__link">
+      <a href="../../../links/" class="md-nav__link">
         Links
       </a>
     </li>
@@ -695,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rogue_dungeon/about/" class="md-nav__link">
+      <a href="../../../about/" class="md-nav__link">
         About
       </a>
     </li>
@@ -709,11 +716,259 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-introduction" class="md-nav__link">
+    Part 1 - Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1 - Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importieren-von-texturen-mit-presets" class="md-nav__link">
+    Importieren von Texturen mit Presets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#window-setup" class="md-nav__link">
+    Window Setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-delta-and-smooth-movement" class="md-nav__link">
+    Part 2 - Delta and smooth Movement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-collision-move_and_slide" class="md-nav__link">
+    Part 3 - Collision &amp; move_and_slide
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-scenes-ysort-node" class="md-nav__link">
+    Part 4 - Scenes &amp; ysort node
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-animationplayer" class="md-nav__link">
+    Part 5 - AnimationPlayer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-x" class="md-nav__link">
+    Part 6 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-7-x" class="md-nav__link">
+    Part 7 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-8-x" class="md-nav__link">
+    Part 8 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-9-x" class="md-nav__link">
+    Part 9 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-10-x" class="md-nav__link">
+    Part 10 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-11-x" class="md-nav__link">
+    Part 11 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-12-x" class="md-nav__link">
+    Part 12 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-13-x" class="md-nav__link">
+    Part 13 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-14-x" class="md-nav__link">
+    Part 14 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-15-x" class="md-nav__link">
+    Part 15 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-16-x" class="md-nav__link">
+    Part 16 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-17-x" class="md-nav__link">
+    Part 17 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-18-x" class="md-nav__link">
+    Part 18 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-19-x" class="md-nav__link">
+    Part 19 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-20-x" class="md-nav__link">
+    Part 20 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-21-x" class="md-nav__link">
+    Part 21 - X
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-22-x" class="md-nav__link">
+    Part 22 - X
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                
+                  <h1>Tutorial Notes - Action RPG</h1>
+                
+                <p>Dieser Artikel dient zur begleitenden Dokumentation der Videoserie <a href="https://www.youtube.com/playlist?list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a">Godot Action RPG</a> von <a href="https://www.youtube.com/c/uheartbeast">HeartBeast</a>. Hier werden alle wichtigen Informationen und persönlichen Notizen gesammelt. Jedes der 22 Videos des Kurses erhält ein eigenes Kapitel.</p>
+<h2 id="part-1-introduction">Part 1 - Introduction<a class="headerlink" href="#part-1-introduction" title="Permanent link">&para;</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mAbG8Oi-SvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3 id="importieren-von-texturen-mit-presets">Importieren von Texturen mit Presets<a class="headerlink" href="#importieren-von-texturen-mit-presets" title="Permanent link">&para;</a></h3>
+<p>Dateien lassen sich einfach importieren, indem man Ordner oder Dateien aus dem Finder in das File System zieht. Allerdings wendet <em>Godot</em> beim Import von Bildern einen Default Filter auf die importierten Dateien an. Der Filter kann für jede Datei mit Hilfe des <code>Reimport</code> Buttons aktualisiert werden.</p>
+<div class="admonition hint">
+<p class="admonition-title">Filter Default für Import</p>
+<p>Sollen alle Bilder nach dem gleichen Standard importiert werden, kann dieser über das Drop Down Menü <code>Preset &gt;&gt; Set as default for 'Texture'</code> überschrieben werden.</p>
+</div>
+<h3 id="window-setup">Window Setup<a class="headerlink" href="#window-setup" title="Permanent link">&para;</a></h3>
+<p>Für ein 2D Pixel Art Projekt mit niedriger Auflösung müssen einige Einstellungen in den Projekt Einstellungen geändert werden. Im Bereich <em>Window</em> kann die native Auflösung des Projekts mit <code>Size &gt;&gt; Width / Height</code> eingestellt werden. Damit das Fenster nicht zu klein wird, kann <code>Test Width / Test Height</code> auf ein Vielfaches der nativen Auflösung eingestellt werden. Damit Die native Auflösung auf die dargestellte Auflösung skaliert werden, muss die Option <code>Stretch &gt;&gt; Mode &gt;&gt; 2d</code> ausgewählt werden.</p>
+<h2 id="part-2-delta-and-smooth-movement">Part 2 - Delta and smooth Movement<a class="headerlink" href="#part-2-delta-and-smooth-movement" title="Permanent link">&para;</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EQA9MJ5_TxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="part-3-collision-move_and_slide">Part 3 - Collision &amp; move_and_slide<a class="headerlink" href="#part-3-collision-move_and_slide" title="Permanent link">&para;</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TQKXU7iSWUU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="part-4-scenes-ysort-node">Part 4 - Scenes &amp; ysort node<a class="headerlink" href="#part-4-scenes-ysort-node" title="Permanent link">&para;</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UfKMgHbaGow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="part-5-animationplayer">Part 5 - AnimationPlayer<a class="headerlink" href="#part-5-animationplayer" title="Permanent link">&para;</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wX145eoLFSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 id="part-6-x">Part 6 - X<a class="headerlink" href="#part-6-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-7-x">Part 7 - X<a class="headerlink" href="#part-7-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-8-x">Part 8 - X<a class="headerlink" href="#part-8-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-9-x">Part 9 - X<a class="headerlink" href="#part-9-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-10-x">Part 10 - X<a class="headerlink" href="#part-10-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-11-x">Part 11 - X<a class="headerlink" href="#part-11-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-12-x">Part 12 - X<a class="headerlink" href="#part-12-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-13-x">Part 13 - X<a class="headerlink" href="#part-13-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-14-x">Part 14 - X<a class="headerlink" href="#part-14-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-15-x">Part 15 - X<a class="headerlink" href="#part-15-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-16-x">Part 16 - X<a class="headerlink" href="#part-16-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-17-x">Part 17 - X<a class="headerlink" href="#part-17-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-18-x">Part 18 - X<a class="headerlink" href="#part-18-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-19-x">Part 19 - X<a class="headerlink" href="#part-19-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-20-x">Part 20 - X<a class="headerlink" href="#part-20-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-21-x">Part 21 - X<a class="headerlink" href="#part-21-x" title="Permanent link">&para;</a></h2>
+<h2 id="part-22-x">Part 22 - X<a class="headerlink" href="#part-22-x" title="Permanent link">&para;</a></h2>
+                
+                  
+                
+              
+              
+                
+
 
               
             </article>
@@ -786,10 +1041,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/rogue_dungeon/", "features": ["content.code.annotate", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "In Zwischenablage kopieren", "clipboard.copied": "In Zwischenablage kopiert", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.placeholder": "Suchbegriff eingeben", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}, "search": "/rogue_dungeon/assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "In Zwischenablage kopieren", "clipboard.copied": "In Zwischenablage kopiert", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.placeholder": "Suchbegriff eingeben", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}, "search": "../../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
     
     
-      <script src="/rogue_dungeon/assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.1e84347e.min.js"></script>
       
     
   </body>

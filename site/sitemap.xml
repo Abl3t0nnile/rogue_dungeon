@@ -1,48 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/design/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/about/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/design/design_doc/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/links/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/technical/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/design/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/tools/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/design/1_design/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/tools/aseprite/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/design/2_exploration/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/tools/aseprite/sprites/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/design/3_combat/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/tools/aseprite/tile_maps/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/design/4_bestiarium/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/tools/gms2/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/notepad/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/technical/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/technical/obj_character/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/technical/turn_structure/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/aseprite/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/aseprite/sprites/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/aseprite/tilemaps/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/godot/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/godot/action_rpg_notes/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/godot/basics/</loc>
+         <lastmod>2021-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abl3t0nnile.github.io/rogue_dungeon/tools/godot/nodes/</loc>
+         <lastmod>2021-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

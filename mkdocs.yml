@@ -126,7 +126,7 @@ nav:
   - Game Design:
     - design/index.md
   - Technical Docs:
-    - code/index.md
+    - technical/index.md
   - Tools:
     - tools/index.md
     - Godot - Game Engine:
